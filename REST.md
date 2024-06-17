@@ -44,15 +44,18 @@ CHAPTER 5 Representational State Transfer (REST)
 
 ### Deriving REST
 #### Starting with the Null Style
+<img src="img/REST/1.png"><br>
 Null 스타일은 제약이 없는 아키텍처이며 구성 요소 간에 명확한 경계가 없는 시스템을 나타냅니다.<br>
-Null Style에서 제약 조건을 추가하며 REST를 설명한다.<br>
+Null Style에서 제약 조건을 추가하며 REST를 설명한다.
 
 #### 제약 1 : Client-Server
+<img src="img/REST/2.png"><br>
  - 서버는 데이터를 저장한다.
  - 클라이언트는 UI를 구성한다.
  - 결과적으로 클라이언트의 인터페이스 이식성과 서버의 확장성을 향상시킨다.
 
 #### 제약 2 : Stateless
+<img src="img/REST/3.png"><br>
  - 서버와 클라이언트 간 통신은 무상태이다. 서버에 저장된 컨택스트를 사용할 수 없다.
  - 서버는 클라이언트의 상태를 저장하지 않는다.
  - 세션 상태는 전적으로 클라이언트에 의해 유지된다.
@@ -62,12 +65,14 @@ Null Style에서 제약 조건을 추가하며 REST를 설명한다.<br>
     - Scalability : 요청 간 상태를 저장할 필요가 없어 서버 자원을 빠르게 해제할 수 있고, 요청에 대한 정보를 관리할 필요 없기 때문에 구현이 단순하다.
 
 #### 제약 3 : Cache ( Client-Cache-Stateless-Server (C$SS) 사용 )
+<img src="img/REST/4.png"><img src="img/REST/5.png"><br>
  - 응답 데이터가 캐시 가능한지 여부를 암시/명시적으로 표기해야한다.
  - 응답 데이터가 캐시 가능한 경우 동일한 요청에 응답 데이터를 재사용 할 수 있다.
  - 네트워크 효율성(efficiency), 확장성(scalability), 사용자 만족도(userperceived performance)를 향상시킬 수 있다.
  - 단 오래된 데이터를 캐시했다면 신뢰성을 감소시킬 수 있다.
 
 #### 제약 4 : Uniform Interface
+<img src="img/REST/6.png"><br>
  - 시스템의 모든 컴포넌트가 동일한 인터페이스를 사용하여 통신한다.
     - 일반성(Generality) : HTTP 표준 메서드(GET, POST, PUT, DELETE)를 사용하는 것에서 나타난다.<br>
     웹 API가 데이터베이스에서 정보를 가져오거나, 새로운 데이터를 추가하거나<br>
@@ -75,6 +80,7 @@ Null Style에서 제약 조건을 추가하며 REST를 설명한다.<br>
     - 가시성(Visibility) : 요청과 응답이 HTTP 표준을 따르므로 네트워크 상의 모든 요청과 응답은 명확하고 일관적이다.
 
 #### 제약 5 : Layered System
+<img src="img/REST/7.png"><br>
  - 컴포넌트 간 인접한 계층 이상을 확인할 수 없도록 제한한다.
  - 전체 시스템의 복잡도를 줄이고 독립성을 증가시킨다.
  - 계층 구조는 레거시 시스템을 캡슐화하고, 레거시 클라이언트로부터 새로운 서비스를 보호할 수 있다.
@@ -82,6 +88,7 @@ Null Style에서 제약 조건을 추가하며 REST를 설명한다.<br>
  - 단 네트워크 통신과 데이터 처리에 오버헤드와 지연이 심화되어 성능이 감소할 수 있다.
 
 #### 제약 6 : Code-on-Demand(선택 제약이나 2024 기준 웹 브라우저엔 모두 적용되어있다...)
+<img src="img/REST/8.png"><br>
  - 클라이언트가 서버로부터 동적으로 코드를 받아 실행할 수 있도록 하는 방식이다.<br>
  웹 브라우저의 JavaScript, SPA(Single Page Application) 프레임워크의 React, Angular, Vue.js 등이 있다.
  - 클라이언트는 더 적은 기능만 구현해도 되며, 필요한 기능은 서버로부터 동적으로 받아 확장할 수 있다.
