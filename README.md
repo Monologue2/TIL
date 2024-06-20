@@ -21,6 +21,6 @@ Document Form
 Contents
 
 ##### References
-[GitHub](https://github.com)
-[$<Document Title>]($<Some_URL>)
+- [GitHub](https://github.com)
+- [$<Document Title>]($<Some_URL>)
 ```
