@@ -133,7 +133,47 @@ REST는 3가지 컴포넌트의 역할에 초점을 둔다.<br>
     - 예시 : ```Content-Type : application/json``` 헤더는 메타데이터의 일반적인 예시다. 서버가 클라이언트에게 응답 데이터가 JSON 형식임을 알리고 있다.
 
 ---
+### Examples : Doctors Office API
+```
+Resource API Endpoints:
+
+GET    /customers
+POST  /customers
+GET    /customers/<id>
+PUT    /customers/<id>
+PATCH  /customers/<id>
+DELETE /customers/<id>
+GET    /customers/<id>/appointments
+POST  /customers/<id>/appointments
+GET    /customers/<id>/appointments/<id>
+PUT    /customers/<id>/appointments/<id>
+PATCH  /customers/<id>/appointments/<id>
+DELETE /customers/<id>/appointments/<id>
+GET    /customers/<id>/cell_phone
+PUT    /customers/<id>/cell_phone
+
+
+Asynchronous Task Queue API Endpoints:
+
+GET    /outgoing-emails
+POST  /outgoing-emails
+GET    /outgoing-emails/<id>
+PUT    /outgoing-emails/<id>
+PATCH  /outgoing-emails/<id>
+DELETE /outgoing-emails/<id>
+
+
+Synchronous Agent API Endpoints:
+
+GET    /patient-discharger
+GET    /patient-discharger/<id>
+POST  /patient-discharger
+DELETE /patient-discharger/<id>
+```
+
+---
 ###### References
 - [Architectural Styles and
 the Design of Network-based Software Architectures(Roy Thomas Fielding)](https://ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 - [논문 해석](https://steady-life.tistory.com/226)
+- [Examples : Doctors Office API](https://haah.kr/2017/06/28/rest-the-coclusion/)
