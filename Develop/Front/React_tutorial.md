@@ -106,7 +106,8 @@
     ```
 
 ### 컴포넌트 분리와 재사용
-- `src` 디렉터리에 `components` 디렉터리를 생성하고 `Button.js` 컴포넌트 파일을 작성한다.
+- `src` 디렉터리에 `components` 디렉터리를 생성하고 `Button.js` 컴포넌트 파일을 작성한다.<br>
+리액트 컴포넌트는 대문자로 구분된다.<br>
     ``` jsx
     import React from 'react'
 
