@@ -175,6 +175,42 @@
     import `./App.css`;
     ```
 
+- 이미지 표현하기<br>
+`App.js`
+    ```jsx
+    import React, { useState } from 'react';
+    import './App.css'
+    // User 객체 생성
+    const user = {
+    name: 'Hedy Lamarr',
+    imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+    imageSize: 150,
+    };
+
+    // 중괄호를 사용하면 Js 코드에서 일부 변수를 삽입할 수 있다.
+    export default function Profile() {
+    return (
+        <>
+        <h1>{user.name}</h1>
+        <img
+            className="avatar"
+            src={user.imageUrl}
+            alt={'Photo of ' + user.name}
+            style={{
+            width: user.imageSize,
+            height: user.imageSize
+            }}
+        />
+        </>
+    );
+    }
+    ```
+    `App.css`
+    ```css
+    .avatar {
+        border-radius: 50%;
+    }
+    ```
 
 
 ---
