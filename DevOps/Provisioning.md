@@ -53,6 +53,7 @@ IaC에서는 인프라 사양이 구성 파일에 저장되므로 개발자는 �
 - 독점 툴에 대한 벤더 종속성 제거
 
 ##### References
+- [자동화](https://www.redhat.com/ko/topics/automation)
 - [프로비저닝](https://www.redhat.com/ko/topics/automation/what-is-provisioning)
 - [Speed up provisioning with Event-Driven Ansible (EDA)](https://youtu.be/Bt2tZB_5F2U)
 - [Ansible, Kubespray 설명](https://waspro.tistory.com/558)
