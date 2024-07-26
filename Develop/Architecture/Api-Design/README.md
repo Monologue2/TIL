@@ -30,7 +30,13 @@
 - Statelessness
 - Resource-Oriented Design
 - Use Standard HTTP Method
+- Versioning
 
+## Desinging a Simple RESTful API
+1. Define the resource
+2. Design the endpoint
+3. Define the Data Model
+4. Implement the endpoints
 
 ##### References
 - [Api Design from basics to best practices](https://blog.devgenius.io/api-design-from-basics-to-best-practices-49bbb29cf696)
