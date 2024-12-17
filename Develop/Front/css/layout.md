@@ -27,7 +27,40 @@ Body를 Header, Main, Footer의 영역으로 나누고, Main을 다시 각 구�
         </div>
     </main>
     ```
-- 
+- index.css
+    ``` css
+    main {
+        background: #f2f4f7;
+        min-height: 700px;
+    }
+
+    /* 박스 컨테이너, 외부 레이아웃과 내부 자식 요소의 위치를 설정한다 */
+    .box-container {
+        width : 1080px;
+        margin : auto; 
+        /* Grid Layout 모듈 활성화, align-items, justify-items, align-content, justify-content 로 정렬 가능 */
+        display: grid;
+        /* 각 행의 길이 */
+        grid-template-columns: 740px 330px;
+        /* 각 열 가로줄 길이 */
+        grid-template-rows: 120px 310px 890px 130px; 
+        /* 자식 요소 간 간격 */
+        gap: 10px
+    }
+
+    /* 박스 컨테이너의 자식 요소인 박스 아이템 */
+    .box-item {
+        background-color: skyblue;
+        width: 100%;
+        height: 100%;
+        /* 폰트 사이즈 */
+        font-size: 40px;
+        /* 테두리 */
+        border: 1px solid #dee3eb;
+        /* 내부 문자 정렬 */
+        text-align: center
+    }
+    ```
 
 ##### References
 - [기본적인 페이지 레이아웃(layout) 잡기](https://codingbroker.tistory.com/117)

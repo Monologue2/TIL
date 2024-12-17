@@ -26,6 +26,8 @@ ReactDOM.render(
 // 성능 지표를 로그에 기록
 reportWebVitals(console.log);
 ```
+
+### FCP : First Contentful Paint
 ```javascript
 # FCP (First Contentful Paint)
 {name: 'FCP', value: 330.9000000022352, delta: 330.9000000022352, entries: Array(1), id: 'v2-1720686287107-3010615640208'}
@@ -45,6 +47,7 @@ reportWebVitals(console.log);
 `id: 'v2-1720686287107-3010615640208'`
 - 측정 항목에 대한 고유 식별자입니다. 여러 성능 측정 값이 있을 때 이를 구분하는 데 사용됩니다.
 
+### TTFB : Time to First Byte
 ```javascript
 {name: 'TTFB', value: 13.300000000745058, delta: 13.300000000745058, entries: Array(1), id: 'v2-1720686287107-8752269999732'}
 ```
@@ -65,4 +68,3 @@ reportWebVitals(console.log);
 - 측정 항목에 대한 고유 식별자입니다. 여러 성능 측정 값이 있을 때 이를 구분하는 데 사용됩니다.
 
 ##### References
-- [GitHub](https://github.com)
